@@ -1,0 +1,25 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d;
+	printf("Enter The Number To be Printed:");
+	scanf("%d",&a);
+	printf("Max Of Time To Be Printed:");
+	scanf("%d",&b);
+	for(c=0;c<b;c++)
+	{
+		for(d=0;d<c+1;d++)
+		{
+			printf("%d",a);
+		}
+		printf("\n");
+	}
+	for(c=b;c>1;c--)
+	{
+		for(d=0;d<c-1;d++)
+		{
+			printf("%d",a);
+		}
+		printf("\n");
+	}
+}
