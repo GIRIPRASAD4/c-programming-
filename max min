@@ -1,0 +1,28 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d;
+	int e[100];
+	printf("Enter the Number Of Elements You Are Entering:");
+	scanf("%d",&a);
+	printf("Enter The Elements:");
+	for(b=0;b<a;b++)
+	{
+		scanf("%d",&e[b]);
+	}
+	c=e[0];
+	d=e[0];
+	for(b=1;b<a;b++)
+	{
+		if(c>e[b])
+		{
+			c=e[b];
+		}
+		if(d<e[b])
+		{
+			d=e[b];
+		}
+	}
+	printf("Maximum=%d\n",d);
+	printf("Minimum=%d",c);
+}
