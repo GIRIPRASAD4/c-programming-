@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+     
+     int i, Number; 
+       
+     printf("Enter any integer number to find factors: ");
+     scanf("%d", &Number);
+     
+     printf("Factors of %d are:\n", Number);
+      
+     for(i = 1; i <= Number; i++){
+        
+         if(Number%i == 0){
+     	     printf(" %d  ", i);
+    	 }
+     }
+    return 0;
+}
