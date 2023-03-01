@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct  student {
+	char s[100];
+	int rollno;
+	float m1,m2,m3,total,sum; 
+};
+
+int main () {
+	char s[100];
+	int rollno;
+	float m1,m2,m3,total,sum;
+	printf("enter the name of student:");
+	scanf("%s",&s);
+	printf("enter the roll  number:");
+	scanf("%d",&rollno);
+	printf("enter the marks:");
+	scanf("%f%f%f",&m1,&m2,&m3);
+	sum=m1+m2+m3;
+	total=(m1+m2+m3)/3;
+	printf("\nthe total marks is:%f",sum);
+
+	printf("\nthe total percentage is:%f",total);
+	return 0;
+}
