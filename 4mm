@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+ 
+int isAnagram(char *firstString, char *secondString);
+ 
+int main(){
+    char firstString[100], secondArray[100];
+    printf("Enter first String \n");
+    gets(firstString);
+     
+    printf("Enter second String \n");
+    gets(secondArray);
+ 
+    if(isAnagram(firstString, secondArray) == 1){
+       printf("%s and %s are Anagram\n",firstString,secondArray);
+    } else {
+       printf("%s and %s are not Anagram\n",firstString,secondArray);
+    }
+ 
+    return 0;
+}
