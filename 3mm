@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int Check_Armstrong (int Number);
+int Perfect_Number(int Number); 
+ 
+int main()
+{
+	int Number;
+ 
+  	printf("\nPlease Enter Number to Check whether it is an Armstrong,  or Perfect :  ");
+  	scanf("%d", &Number);
+ 	if (Check_Armstrong(Number))
+    	printf("\n %d is an Armstrong Number.", Number);
+  	else
+    	printf("\n %d is not an Armstrong Number.", Number);
+	if (Perfect_Number(Number) ) 
+    	printf("\n %d is a Perfect Number", Number) ;   
+ 	else   
+    	printf("\n %d is not a Perfect Number", Number) ;   
+ 
+  return 0;
+}
